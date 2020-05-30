@@ -35,3 +35,9 @@ b=$((a+3))
 echo $b
 
 ((b++))
+
+# Length of a variable
+a='Hello World'
+echo ${#a}
+b=4567
+echo ${#b}
