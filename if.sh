@@ -1,10 +1,21 @@
 #!/bin/bash
 # Basic if statement
 
-if [ $1 -gt 100 ]
+age=0
+
+echo -n "Enter your Age: "
+read age
+echo "Permission: "
+read permission
+
+if [ $age -gt 18 ]
 then
-    echo Hey, that\'s larger than 100
-    pwd
+    echo you can go to the party
+elif [ $permission == 'yes' ]
+then
+    echo you can go to the party but only before midnight
+else
+    echo you cannot go to party
 fi
 
 date
