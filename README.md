@@ -71,3 +71,15 @@
     - htop
     - kill -l
     ### /proc directory where processes info are mounted by the kernel
+
+    ## File system
+    - /etc - all the configuration files
+    - /sbin - secure system binaries
+    - /bin - all other regular binaries or symlink of the binaries
+    - /tmp - temporary files(blown away when restarted the machine)
+    - /lib{,64} - system, shared libraries
+    `man heir // shows directory structure info`
+    - /boot - kernel, boot-loader(GRUB)
+    - /dev - all the hardware devices
+    - /opt - optional software not installed with package manager, you can link binary to /bin and write config in /etc
+    - /var - all the changing log file, for example, /var/log contains log files
